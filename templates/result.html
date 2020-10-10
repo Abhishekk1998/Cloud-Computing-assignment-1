@@ -24,7 +24,7 @@ body {
 	width: 100%;
 	height:100%;
 	font-family: 'Open Sans', sans-serif;
-	background: #092756;
+	background: #0bc8dd;
 	color: #fff;
 	font-size: 18px;
 	text-align:center;
@@ -49,10 +49,10 @@ body {
 		<!-- Result -->
 		<div class="results">
 			{% if prediction==1 %}
-				<h1>Prediction: <span class='danger'>You have breast cancer.</span></h1>
+				<h1><span class='danger'>Patient has breast cancer.</span></h1>
 
 			{% elif prediction==0 %}
-				<h1>Prediction: <span class='safe'>You don't have Breast Cancer.</span></h1>
+				<h1><span class='safe'>Patient don't have breast cancer.</span></h1>
 				
 			{% endif %}
 		</div>

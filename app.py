@@ -24,13 +24,9 @@ def predict():
     df = pd.DataFrame(features_value, columns=features_name)
     output = model.predict(df)
         
-    if output == 1:
-        res_val = "breast cancer"
-    else:
-        res_val = "no breast cancer"
-        
+    
 
-    return render_template('index.html', prediction_text='Patient has {}'.format(res_val))
+    return render_template('result.html', prediction=output)
 
 if __name__ == "__main__":
     app.run()
